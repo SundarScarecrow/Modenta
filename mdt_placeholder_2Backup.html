@@ -1,0 +1,488 @@
+<head>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url("Cocogoose_Pro_Thin-trial.woff");
+        }
+        @font-face {
+            font-family:"Cocogoose Pro Thin";
+            src:url("Cocogoose_Pro_Thin-trial.eot?") 
+            format("eot"),url("Cocogoose_Pro_Thin-trial.woff") 
+            format("woff"),url("Cocogoose_Pro_Thin-trial.ttf") 
+            format("truetype"),url("Cocogoose_Pro_Thin-trial.svg#CocogoosePro-Thin") 
+            format("svg");font-weight:normal;font-style:normal;
+        }
+        
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bgimg {
+            background-image: url('BG.png');
+            background-blend-mode: luminosity;
+            height: 100vh;
+            width: 100vw;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: wheat;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+
+        .location-text {
+            font-weight: 400;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 1em;
+            font-size: 26px;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(6, 17, 61);
+        }
+        .topcenter {
+            position: absolute;
+            top: -5%;
+            left: 25%;
+            font-size: 26px;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(6, 17, 61);
+        }
+        img{
+            height: 40%;
+            width: auto;
+
+
+        }
+        .container 
+        {
+        position: relative;
+        width: 100%;
+        }
+        .overlay 
+        {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  overflow: auto;
+  width: auto;
+  height:auto;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .01s ease;
+  transition: .01s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+
+        .topright {
+            position: absolute;
+            top: 10%;
+            left: 85%;
+            font-family: myFirstFont;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            line-height: 10px;
+        }
+        .bottomcenter {
+            position: absolute;
+            bottom: 2%;
+            left: 25%;
+
+        }
+        .mapimg{
+            display: block;
+            height: auto;
+            width: auto;
+            opacity: 60%;
+
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 3%;
+            left: 2%;
+            font-family: myFirstFont;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .doc-name-text {
+            margin-top: 0.8%;
+        }
+
+        .doc-name-text-1 {
+            margin-top: 0.5%;
+        }
+
+        .middle {
+            position: absolute;
+            top: 61%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .middle-coming-soon {
+            margin: 0%;
+            font-size: 1.7rem;
+            width: 100%;
+            font-size: larger;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .middle-text {
+            display: inline-block;
+            margin-top: 2%;
+            width: 80%;
+            margin-right: 0 !important;
+            font-size: large;
+            
+            font-family: 'Quicksand', sans-serif;
+            
+        }
+
+        .middle-text-1 {
+            display: inline-block;
+            margin-top: 2%;
+            width: 80%;
+            margin-right: 0 !important;
+            margin-bottom: 4%;
+            font-size: 1.2rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .smallline {
+            margin: auto;
+            width: 40%;
+        }
+
+        .title-main {
+            font-size: 2.4em !important;
+            font-weight: 200 !important;
+            margin-bottom: 10%;
+        
+        }
+
+        .title-sub {
+            margin-top: 5%;
+        }
+
+
+        /*     &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&                            980     width*/
+        @media (max-width: 980px) {
+            .title-main {
+                font-size: 2.3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .topright {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                font-family: myFirstFont;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+            }
+            img{
+            height: 20%;
+            width: 12%;
+            }
+            .middle {
+                position: absolute;
+                top: 50%;
+                left: 80%;
+            }
+
+            .title-sub {
+                margin-top: 15%;
+            }
+
+            .middle-coming-soon {
+                margin: 0%;
+                font-size: 1.7rem;
+                width: 100%;
+
+            }
+
+            .middle-text {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                font-size: large;
+                font-weight: 550;
+            }
+
+            .middle-text-1 {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                margin-bottom: 4%;
+                font-size: 1.2rem;
+            }
+
+            .bottom-left {
+                position: absolute;
+                height: 60%;
+                bottom: 7%;
+                left: 2%;
+                font-family: myFirstFont;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+
+        }
+
+
+
+        /*     &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&                            1250 width*/
+        @media (max-width: 1250px) {
+            .title-main {
+                font-size: 2.3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .title-sub {
+                margin-top: 15%;
+            }
+            img{
+            height: 25%;
+            width: 34%;
+            }
+            .middle-coming-soon {
+                margin: 0%;
+                display: inline-block;
+                font-size: 1.8rem;
+                width: 100%;
+            }
+
+            .middle {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 40px;
+            }
+
+            .middle-text {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                font-size: large;
+                font-weight: 550;
+            }
+
+            .topright {
+                position: absolute;
+                top: 10%;
+                left: 80%;
+                font-family: myFirstFont;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+            }
+
+            .middle-text-1 {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                margin-bottom: 4%;
+                font-size: 1.2rem;
+            }
+
+            .bottom-left {
+                position: absolute;
+                height: 60%;
+                bottom: 4%;
+                left: 2%;
+                font-family: myFirstFont;
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+
+            .bottom-left p {
+                white-space: pre-line;
+            }
+        }
+
+/*     &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&                            700 width*/
+        @media (max-width: 700px) {
+            .title-main {
+                font-size: 3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .topright {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                font-family: myFirstFont;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+            }
+            img{
+            height: 25%;
+            width: 14%;
+            }
+            .bottom-left {
+                display: none;
+            }
+
+            .title-sub {
+                margin-top: 10%;
+            }
+
+            .middle-text-1 {
+                font-weight: 700;
+                display: inline;
+                margin-bottom: 1%;
+            }
+
+            .middle-text {
+                display: inline;
+                margin-top: 2%;
+                margin-bottom: .2%;
+                font-size: 0.9rem;
+            }
+
+            .location-text {
+                color: black;
+                font-weight: 1000;
+            }
+        }
+
+       /*     &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&                            550 width*/
+        @media (max-width: 550px) {
+            .title-main {
+                font-size: 3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .topright {
+                position: absolute;
+                top: 10%;
+                left: 55%;
+                font-family: myFirstFont;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+                font-size: large;
+            }
+            img{
+            height: 25%;
+            width: 14%;
+            }
+            .middle {
+                width: 100vw;
+                position: absolute;
+                top: 97%;
+                left: 50%;
+            }
+
+            .middle .middle-coming-soon {
+                display: none;
+            }
+
+            .middle-text-1 {
+                font-weight: 700;
+                display: inline;
+                margin-bottom: 1%;
+                background-color: lightgray;
+            }
+
+            .middle-text {
+                display: inline;
+                margin-top: 2%;
+                margin-bottom: .2%;
+                font-size: 0.9rem;
+                background-color: lightgrey;
+            }
+
+            .location-text {
+                color: black;
+                font-weight: 1000;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1067.0" data-gr-ext-installed="">
+    <div class="bgimg">
+        <div class="topcenter">
+            <p>
+                <img src="Logo with text.png" alt="Modenta Logo">
+            </p>
+        </div>
+
+
+        <div class="middle">
+            <p class="middle-coming-soon">Website under construction</p>
+            <p class="middle-text"><b>Give us a call:</b> +919790846467 <br> +917837674763</p>
+            <p class="middle-text"><b>Email us here </b> info@modenta.in</p>
+            <div class="smallline">
+                
+                <hr>
+            </div>
+
+            
+            <a href="https://goo.gl/maps/EdMNLn8pyZ9ANPFu6">
+                <div class="container">
+                <img src="ModentaMapScOriginal.png"  alt="Blur map" style="height: 20%; width: auto;opacity: 50%; border-bottom-left-radius:5% ;border-top-right-radius: 5%;"></a><br>
+
+                <div class="overlay">
+                    <a href="https://goo.gl/maps/EdMNLn8pyZ9ANPFu6">
+                    <img src="ModentaMapScOriginal.png" alt="Maps2modenta" style="height: 20%; width: auto;border-bottom-left-radius:5% ;border-top-right-radius: 5%;" ></a><br>
+                 
+                </div>  </div>
+                <div style="font-size: 12px;font-family:'Times New Roman', Times, serif;color: wheat;">CLICK HERE TO SEE LOCATION</div>
+
+        </div>
+  
+        <!--
+        <div class="bottomcenter">
+        <div class="container">
+         
+     
+            <img  src="ModentaMapScreenshot-blur.jpeg" alt="Maps@modenta" style="opacity: 50%;">
+        
+     <div class="overlay">
+        <img src="ModentaMapScreenshot.png" alt="Maps2modenta" >
+     
+    </div>  
+</div>
+     </div>-->
+    </div>
+    
+</body>

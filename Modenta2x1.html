@@ -1,0 +1,161 @@
+<head>
+    <style>
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            width: 100vw;
+            height: 100vh;
+            background-image: url('BG.png');
+            background-blend-mode: luminosity;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: wheat;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .header {
+            grid-column: span 12;
+            height: 14rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } 
+        .main-content {
+            grid-column: span 12;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-section{
+            margin: 0;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .footer {
+            grid-column: span 12;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        .Logo-with-text{
+            width: 50%;
+            height: 100%;
+        }
+
+        .middle-coming-soon {
+            text-align: center;
+            width: 27rem;
+            width: 100%;
+            font-size: 3rem !important;
+            font-size: larger;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0% !important;
+        }
+        
+        .middle-text {
+            text-align: center;
+            margin: 0;
+            margin-top: 0.5%;
+            margin-right: 0 !important;
+            font-size: 1.5rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .smallline {
+            margin: auto;
+            width: 40%;
+        }
+        .container{
+            height: 9rem;
+            width: 15rem;
+        }
+        .container:hover .overlay {
+        height: 6rem !important;
+        width: 10rem !important;  
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        }
+        .overlay {   
+            height: 6rem !important;
+            width: 10rem !important;  
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: .01s ease;
+            transition: .01s ease;
+        }
+        .Map-image{
+            height: 100%;
+            width: 100%;
+            opacity: 50%;
+            border-bottom-left-radius:5%;
+            border-top-right-radius: 5%;
+        }
+
+        .Map-Image-onHover{
+            border-bottom-left-radius:5% ;
+            border-top-right-radius: 5%;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="main-container bgimg">
+        <div class="header">
+            <img src="Logo with text.png" alt="Modenta Logo" class="Logo-with-text">
+        </div>
+        <div class="main-content">
+            <div class="content-section">
+                <p class="middle-coming-soon">We are currently building our website.</p>
+                <p class="middle-text"><b>Give us a call:</p>
+                <p class="middle-text">+919790846467 || +917837674763</p>
+                <p class="middle-text"><b>Email us here </b> info@modenta.in</p>
+            </div>
+            <div class="smallline">
+                <hr>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://goo.gl/maps/EdMNLn8pyZ9ANPFu6">
+                <div class="container">
+                    <img src="ModentaMapScOriginal.png" alt="Blur map" class="Map-image">
+            </a>
+            <br>
+            <div class="overlay">
+                <a href="https://goo.gl/maps/EdMNLn8pyZ9ANPFu6">
+                    <img src="ModentaMapScOriginal.png" alt="Maps2modenta" class="Map-Image-onHover"></a>
+                <br>
+            </div>
+        </div>
+        <div style="font-size: 12px;font-family:'Times New Roman', Times, serif;color: wheat;">CLICK HERE TO SEE LOCATION</div>
+    </div>
+  </body>

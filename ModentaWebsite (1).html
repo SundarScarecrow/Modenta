@@ -1,0 +1,393 @@
+<head>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url("Cocogoose_Pro_Thin-trial.woff");
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bgimg {
+            background-image: url('https://images.unsplash.com/photo-1499377193864-82682aefed04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1482&q=80');
+            background-blend-mode: luminosity;
+            height: 100vh;
+            width: 100vw;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: rgba(15, 68, 108, 255);
+            
+            font-size: 25px;
+        }
+
+        .location-text {
+            font-weight: 400;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 1em;
+            font-size: 26px;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(6, 17, 61);
+        }
+
+        .topright {
+            position: absolute;
+            top: 10%;
+            left: 85%;
+            width: 20rem;
+            font-family: myFirstFont;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            line-height: 10px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 3%;
+            left: 2%;
+            font-family: myFirstFont;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .doc-name-text {
+            margin-top: 0.8%;
+        }
+
+        .doc-name-text-1 {
+            margin-top: 0.5%;
+        }
+
+        .middle {
+            position: absolute;
+            top: 85%;
+            left: 85%;
+            width: 22rem;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .middle-coming-soon {
+            margin: 0%;
+            font-size: 1.7rem;
+            width: 100%;
+            font-weight: 600;
+        }
+
+        .middle-text {
+            display: inline-block;
+            margin-top: 2%;
+            width: 80%;
+            margin-right: 0 !important;
+            font-size: medium;
+            font-weight: 550;
+        }
+
+        .middle-text-1 {
+            display: inline-block;
+            margin-top: 2%;
+            width: 80%;
+            margin-right: 0 !important;
+            margin-bottom: 4%;
+            font-size: 1.2rem;
+        }
+
+        .smallline {
+            margin: auto;
+            width: 40%;
+        }
+
+        .title-main {
+            font-size: 2.4em !important;
+            font-weight: 200 !important;
+            margin-bottom: 10%;
+        }
+
+        .title-sub {
+            margin: 0;
+            margin-top: 10%;
+        }
+
+        .logo-image{
+            width: 5rem;
+        }
+
+        @media (max-width: 980px) {
+            .title-main {
+                font-size: 2.3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .topright {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                font-family: myFirstFont;
+                width: 15rem;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+            }
+
+            .middle {
+                position: absolute;
+                top: 50%;
+                left: 80%;
+                width: 13rem;
+            }
+
+            .title-sub {
+                margin-top: 15%;
+            }
+
+            .middle-coming-soon {
+                margin: 0%;
+                font-size: 1.7rem;
+                width: 100%;
+
+            }
+
+            .middle-text {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                font-size: large;
+                font-weight: 550;
+            }
+
+            .middle-text-1 {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                margin-bottom: 4%;
+                font-size: 1.2rem;
+            }
+
+            .bottom-left {
+                position: absolute;
+                height: 70%;
+                bottom: 7%;
+                left: 2%;
+                font-family: myFirstFont;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+
+        }
+
+        @media (max-width: 1250px) {
+            .title-main {
+                font-size: 2.3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .title-sub {
+                margin-top: 10%;
+            }
+
+            .middle-coming-soon {
+                margin: 0%;
+                display: inline-block;
+                font-size: 1.8rem;
+                width: 100%;
+            }
+
+            .middle {
+                position: absolute;
+                top: 75%;
+                left: 80%;
+            }
+
+            .middle-text {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                font-size: large;
+                font-weight: 550;
+            }
+
+            .topright {
+                position: absolute;
+                top: 10%;
+                left: 80%;
+                font-family: myFirstFont;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+            }
+
+            .middle-text-1 {
+                display: inline-block;
+                margin-top: 2%;
+                width: 100%;
+                margin-right: 0 !important;
+                margin-bottom: 4%;
+                font-size: 1.2rem;
+            }
+            .doc-name-text-1{
+                margin-bottom: 5%;
+            }
+            .bottom-left {
+                position: absolute;
+                height: 40%;
+                bottom: 4%;
+                left: 2%;
+                font-family: myFirstFont;
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+
+            .bottom-left p {
+                white-space: pre-line;
+            }
+        }
+
+
+        @media (max-width: 700px) {
+            .title-main {
+                font-size: 3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .topright {
+                position: absolute;
+                top: 9%;
+                left: 50%;
+                font-family: myFirstFont;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+            }
+
+            .bottom-left {
+                display: none;
+            }
+
+            .title-sub {
+                margin-top: 10%;
+            }
+            .middle{
+                width: 13rem;
+            }
+
+            .middle-text-1 {
+                font-weight: 700;
+                display: inline;
+                margin-bottom: 1%;
+            }
+
+            .middle-text {
+                display: inline;
+                margin-top: 2%;
+                margin-bottom: .2%;
+                font-size: 0.9rem;
+            }
+
+            .location-text {
+                color: black;
+                font-weight: 1000;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .title-main {
+                font-size: 3em !important;
+                font-weight: 200 !important;
+                margin: 0;
+            }
+
+            .topright {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                font-family: myFirstFont;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                line-height: 10px;
+            }
+
+            .middle {
+                width: 100vw;
+                position: absolute;
+                top: 97%;
+                left: 50%;
+            }
+
+            .middle .middle-coming-soon {
+                display: none;
+            }
+
+            .middle-text-1 {
+                font-weight: 700;
+                display: inline;
+                margin-bottom: 1%;
+            }
+
+            .middle-text {
+                display: inline;
+                margin-top: 2%;
+                margin-bottom: .2%;
+                font-size: 0.9rem;
+            }
+
+            .location-text {
+                color: black;
+                font-weight: 1000;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1067.0" data-gr-ext-installed="">
+    <div class="bgimg">
+        <div class="topleft">
+            <p>
+                <img src="ModentaLogo.jpg" alt="Modenta Logo" class="logo-image">
+            </p>
+        </div>
+        <div class="bottom-left">
+            <p class="doc-name-text-1">Dr. Aarti Tarakoo</p>
+            <p class="doc-name-text">M.D.S, oral Medicine
+                and laser specialist</p>
+            <p class="doc-name-text-1">Dr. Gayathri Sreenivasan</p>
+            <p class="doc-name-text">M.D.S, prostodontist
+                and implantologist</p>
+        </div>
+        <div class="topright">
+            <p style="text-align: center">
+            </p>
+            <h1 class="title-main">modenta</h1>
+            <p class="title-sub">Dental health and wellness</p>
+
+            <p></p>
+        </div>
+        <div class="middle">
+            <p class="middle-coming-soon">COMING SOON</p>
+            <p class="middle-text-1"><b class="location-text">Location: </b><a
+                    href="https://maps.app.goo.gl/iBco9iJU4SHrrHUw6">Visit
+                    us</a> <br> </p>
+            <p class="middle-text"><b>Phone:</b> +91 9790846467 <br> +91 7837674763</p>
+            <div class="smallline">
+                <hr>
+            </div>
+            <p></p>
+        </div>
+    </div>
+</body>
